@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dezvoltarea Abilităților IT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dezvoltarea Abilităților IT</h1>
+    <nav>
+      <ul>
+        <li><a href="#importanta">Importanța</a></li>
+        <li><a href="#abilitati">Abilități</a></li>
+        <li><a href="#resurse">Resurse</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h3>Informații utile</h3>
+      <p>Tehnologia este viitorul. Învață-o, controleaz-o, folosește-o.</p>
+      <p>Cunoștințele IT îți oferă un avantaj în orice domeniu.</p>
+      <p>Tehnologia este viitorul. Învață-o, controleaz-o, folosește-o.</p>
+      <p>Cunoștințele IT îți oferă un avantaj în orice domeniu.</p>
+      <p>Peste 90% dintre locurile de muncă în viitor vor necesita abilități de bază în tehnologie.</p>
+      <p>1 din 3 joburi în prezent sunt legate de domeniul IT. Începe să înveți acum!</p>
+      <p>Începe mic: Nu trebuie să devii expert din prima. Începe cu noțiuni de bază și învață în ritmul tău.</p>
+      <p>Învață IT pentru a deveni parte din revoluția digitală globală.</p>
+    </aside>
+
+    <main>
+      <section id="importanta">
+        <h2>De ce sunt importante abilitățile IT?</h2>
+        <p>Într-o lume digitală, cunoștințele IT sunt esențiale pentru educație, muncă și viața de zi cu zi. Acestea ne ajută să fim mai eficienți, mai conectați și mai pregătiți pentru viitor. Fie că vorbim despre educație, carieră sau viața cotidiană, abilitățile IT sunt esențiale pentru succesul nostru personal și profesional.</p>
+  
+        <p>În educație, cunoștințele IT permit accesul rapid și eficient la informații și resurse educaționale. Platformele online, cursurile și materialele interactive sunt acum la îndemâna oricui, iar competențele digitale sunt necesare pentru a naviga în această lume a învățării digitale.</p>
+        
+        <p>Pentru carieră, abilitățile IT sunt tot mai cerute. Fie că îți dorești să lucrezi în marketing digital, dezvoltare software, design grafic sau analiză de date, cunoștințele în tehnologie îți vor deschide uși către joburi mai bune și salarii mai mari. De asemenea, din ce în ce mai multe locuri de muncă permit munca de acasă, iar abilitățile IT sunt cheia pentru a lucra eficient online.</p>
+        
+        <p>În viața de zi cu zi, tehnologia ne influențează fiecare aspect al vieții, de la comunicarea cu prietenii și familia până la gestionarea activităților zilnice. Abilitățile IT ne ajută să folosim aceste instrumente mai eficient și să ne protejăm informațiile personale într-o lume digitală tot mai interconectată.</p>
+        
+        <p>Conform unui studiu global, peste 70% dintre angajatori consideră că abilitățile IT sunt esențiale pentru succesul profesional. Aceste cunoștințe pot adăuga valoare în orice domeniu, oferindu-ți un avantaj competitiv pe piața muncii.</p>
+      
+    </section>
+
+      <section id="abilitati">
+        <h2>Abilități esențiale</h2>
+        <ul>
+          <li>Programare (HTML, CSS, C++, SQL)</li>
+          <li>Lucru cu date (Excel, baze de date)</li>
+          <li>Gândire logică și rezolvare de probleme</li>
+          <li>Utilizarea software-urilor de birou</li>
+        </ul>
+      </section>
+
+      <section id="resurse">
+        <h2>Resurse pentru învățare</h2>
+        <p>Iată câteva platforme utile:</p>
+        <ul>
+          <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+          <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
+          <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+        </ul>
+      </section>
+
+      <section id="citat">
+        <h2>Inspirație IT</h2>
+        <p id="motivational">“Codul este poezia logicii.”</p>
+        <p id="motivational">Tehnologia este cheia pentru a deschide porțile viitorului. Fii parte din schimbare!</p>
+        <p id="motivational">Fii creativ cu tehnologia! Nu este vorba doar despre a ști să folosești instrumentele existente, ci despre a crea noi soluții pentru problemele de zi cu zi.</p>
+        <p id="motivational">Tehnologia schimbă lumea. Fiecare linie de cod poate influența pozitiv viitorul. Începe acum să înveți și să contribui la această schimbare!</p>
+        <p id="motivational">Inovația nu are limite. Transformă-ți ideile în realitate prin tehnologie.</p>
+        <p id="motivational">Începe astăzi! Fiecare pas pe care îl faci în învățarea tehnologiei este un pas mai aproape de a deveni inovatorul de mâine.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <label for="nume">Nume:</label><br>
+          <input type="text" id="nume" name="nume" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="mesaj">Mesaj:</label><br>
+          <textarea id="mesaj" name="mesaj" rows="4"></textarea><br><br>
+
+          <button type="submit">Trimite</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>Proiect realizat de Brailean Andreia – 2025</p>
+  </footer>
+
+  <script>
+    const citate = [
+      "“Codul este poezia logicii.”",
+      "“Fiecare bug este o lecție.”",
+      "“Fii creativ cu tehnologia!”"
+    ];
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % citate.length;
+      document.getElementById("motivational").textContent = citate[index];
+    }, 4000);
+  </script>
+</body>
+</html>
